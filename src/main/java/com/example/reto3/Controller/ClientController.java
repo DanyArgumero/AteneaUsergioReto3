@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,RequestMethod.DELETE})
 @RestController
-@RequestMapping("/api/Client")
+@RequestMapping("/api/client")
 public class ClientController {
     @Autowired
     private ClientService clientService;
