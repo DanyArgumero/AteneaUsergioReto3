@@ -33,7 +33,7 @@ public class CarModel {
     @OneToMany
     @JoinColumn(name = "idMessage")
     @JsonIgnoreProperties({"cars", "clients"})
-    private List<MessageModel> messsages;
+    private List<MessageModel> message;
 
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "car")
@@ -80,20 +80,20 @@ public class CarModel {
         this.description = description;
     }
 
-    public GamaModel getGamaModel() {
+    public GamaModel getGama() {
         return gama;
     }
 
-    public void setGamaModel(GamaModel gamaModel) {
-        this.gama = gamaModel;
+    public void setGama(GamaModel gama) {
+        this.gama = gama;
     }
 
     public List<MessageModel> getMesssages() {
-        return messsages;
+        return message;
     }
 
     public void setMesssages(List<MessageModel> messsages) {
-        this.messsages = messsages;
+        this.message = messsages;
     }
 
     public List<Reservation> getReservations() {

@@ -15,13 +15,13 @@ public class ClientModel {
     @Column(name = "idClient")
     private Integer idClient;
 
-    @Column(name = "Name")
-    private String name;
     @Column(name = "Email")
     private String email;
     @Column(name = "Password")
     private String password;
 
+    @Column(name = "Name")
+    private String name;
     @Column(name = "Age")
     private Integer age;
 
