@@ -21,7 +21,7 @@ public class GamaModel {
     @Column(name = "Description")
     private String description;
 
-    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "gamaModel")
+    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "gama")
     @JsonIgnoreProperties("gama")
     private List<CarModel> cars;
 
