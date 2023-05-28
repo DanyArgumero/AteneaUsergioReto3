@@ -12,10 +12,8 @@ public class Reservation{
     @Column(name = "idReservation")
     private Integer idReservation;
 
-    @Column(name = "creationDate")
     private Date StartDate;
 
-    @Column(name = "devolutionDate")
     private Date devolutionDate;
 
     @Column(name = "Status")
