@@ -28,7 +28,7 @@ public class CarModel {
     @ManyToOne
     @JoinColumn(name = "idGama")
     @JsonIgnoreProperties("cars")
-    private GamaModel gamaModel;
+    private GamaModel gama;
 
     @OneToMany
     @JoinColumn(name = "idMessage")
@@ -81,11 +81,11 @@ public class CarModel {
     }
 
     public GamaModel getGamaModel() {
-        return gamaModel;
+        return gama;
     }
 
     public void setGamaModel(GamaModel gamaModel) {
-        this.gamaModel = gamaModel;
+        this.gama = gamaModel;
     }
 
     public List<MessageModel> getMesssages() {
