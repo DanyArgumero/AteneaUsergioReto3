@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,RequestMethod.DELETE})
 @RestController
-@RequestMapping("/api/car")
+@RequestMapping("/api/Car")
 public class CarController {
     @Autowired
     private CarService carService;
