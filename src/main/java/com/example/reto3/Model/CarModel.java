@@ -32,7 +32,7 @@ public class CarModel {
     @OneToMany
     @JoinColumn(name = "idMessage")
     @JsonIgnoreProperties({"cars", "clients"})
-    private List<MessageModel> message;
+    private List<MessageModel> messages;
 
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "car")
