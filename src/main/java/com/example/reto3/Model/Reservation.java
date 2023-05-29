@@ -1,9 +1,9 @@
 package com.example.reto3.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
 
 import java.util.Date;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Reservation")

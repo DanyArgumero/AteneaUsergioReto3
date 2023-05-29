@@ -32,4 +32,16 @@ public class CarController {
     public CarModel save(@RequestBody CarModel car){
         return carService.save(car);
     }
+
+    @PutMapping("/update")
+    @ResponseStatus(HttpStatus.CREATED)
+    public CarModel update(@RequestBody CarModel car){
+        return carService.update(car);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public boolean delete(@PathVariable int id){
+        return carService.deleteCarById(id);
+    }
 }
